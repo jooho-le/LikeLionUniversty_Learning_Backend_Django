@@ -106,3 +106,22 @@
 #         print("fail")
 
 # -------------------------------------------------------------------
+
+# scores = [85, 90, 78, 92, 88, 100]
+
+# max_val = max(scores) # 리스트의 최대값 반환
+# min_val = min(scores) # 리스트의 최소값 반환
+# sum_val = sum(scores) # 리스트의 요소들의 합 반환
+# avg_val = sum_val / len(scores) # 리스트의 요소들의 평균 계산
+
+# # sum 원시적으로 구하기 
+# sum_values = 0
+
+# for score in scores:
+#     sum_values += score
+# print(sum_values)
+
+# # sum 함수를 사용하여 구하기
+# print(sum_val)
+
+# -------------------------------------------------------------------
