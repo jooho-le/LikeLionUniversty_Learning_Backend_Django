@@ -114,14 +114,14 @@
 # sum_val = sum(scores) # 리스트의 요소들의 합 반환
 # avg_val = sum_val / len(scores) # 리스트의 요소들의 평균 계산
 
-# # sum 원시적으로 구하기 
+# # sum 원시적으로 구하기 -> 속도 : O(n)
 # sum_values = 0
 
 # for score in scores:
 #     sum_values += score
 # print(sum_values)
 
-# # sum 함수를 사용하여 구하기
+# # sum 함수를 사용하여 구하기 -> 속도 : O(n) -> 내부적으로 C로 구현되어 있어서 빠름
 # print(sum_val)
 
 # -------------------------------------------------------------------
