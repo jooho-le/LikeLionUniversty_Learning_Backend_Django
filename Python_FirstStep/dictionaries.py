@@ -85,3 +85,59 @@
 # for value in tech.values(): # 딕셔너리의 값을 순회하는 메서드
 #     print(value) # 값만 출력됨
     
+# -----------------------------------------------------------------
+
+# 중첩
+
+# student_1 = {
+#     "student_id": 1,
+#     "gpa": 4.5,
+# }
+# student_2 = {
+#     "student_id": 2,
+#     "gpa": 3.3,
+# }
+
+# studnts = [student_1, student_2] # 딕셔너리를 요소로 가지는 리스트
+
+# for student in studnts:
+#     print(student)
+    
+# for student in studnts:
+#     print(student["student_id"], student["gpa"]) # 딕셔너리의 키를 사용하여 각 학생의 ID와 GPA를 출력
+    
+# for student in studnts:
+#     student["graduated"] = False # 딕셔너리에 새로운 키와 값을 추가하여 졸업 여부를 나타냄
+#     print(student)
+
+# student = {
+#     "subjects": ["Python", "Java", "JavaScript"], # 딕셔너리의 값으로 리스트를 사용하여 여러 과목을 나타냄
+# }
+
+# print(student["subjects"]) # 딕셔너리에서 키를 사용하여 리스트를 조회
+
+# subjects_list = student["subjects"] # 딕셔너리에서 키를 사용하여 리스트를 조회하여 변수에 저장
+
+# for subject in subjects_list:
+#     print(subject) # 리스트의 각 요소를 순회하며 출력   
+
+# student = {
+#     "scholarship" : {
+#         "name": "장학금",
+#         "amount": 1000000
+#     }
+# } # 딕셔너리의 값으로 또 다른 딕셔너리를 사용하여 장학금 정보를 나타냄
+
+# print(student)
+
+# for key in student.keys():
+#     print(key)
+    
+# for value in student.values():
+#     print(value) # 딕셔너리의 값은 또 다른 딕셔너리이므로, 값 자체가 딕셔너리로 출력됨
+    
+# for valeu in student.values():
+#     for value_2 in valeu.values():
+#         print(value_2)
+
+# -----------------------------------------------------------------
