@@ -64,3 +64,24 @@
 
 # -----------------------------------------------------------------
 
+# tech = {
+#     "python": "파이썬",
+#     "java": "자바",
+#     "javascript": "자바스크립트"
+# }
+
+# for key, value in tech.items(): # 딕셔너리의 키와 값을 순회하는 메서드, 반환된 객체는 dict_items 타입이며, 각 요소는 (키, 값) 튜플로 이루어져 있음
+#     print(f'{key} - {value}')
+    
+# for i in tech: # 딕셔너리를 순회할 때 기본적으로 키를 순회함
+#     print(i) # 키만 출력됨  
+
+# for key, value in tech:
+#     print(f'{key} - {value}') # 키와 값을 출력하려면 items() 메서드를 사용하여 키와 값을 함께 순회해야 함
+    
+# for key in tech.keys(): # 딕셔너리의 키를 순회하는 메서드
+#     print(key) # 키만 출력됨
+    
+# for value in tech.values(): # 딕셔너리의 값을 순회하는 메서드
+#     print(value) # 값만 출력됨
+    
