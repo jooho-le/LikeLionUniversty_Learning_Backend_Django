@@ -39,3 +39,26 @@
 
 # -------------------------------------------------------------------
 
+# def get_id(email):
+#     email_id = email.removesuffix('@example.com') # 문자열에서 특정 접미사를 제거하는 메서드, email에서 '@example.com'을 제거하여 아이디를 반환
+#     print(email_id)
+#     return email_id # 함수의 반환값, email_id를 반환하여 함수 실행 결과로 사용할 수 있도록 함
+
+# #    print("이 코드는 실행되지 않습니다") # return 이후의 코드는 실행되지 않음
+
+# get_id('user@example.com') # 함수 호출, 인자로 
+# user_id = get_id("user@example.com") # return된 값을 변수에 저장하여 이후에 사용할 수 있도록 함
+# print(user_id) # 변수에 저장된 값을 출력하여 함수의 반환값을 확인할
+
+# def get_id(email):
+    
+#     if email.endswith('@example.com'): # 문자열이 특정 접미사로 끝나는지 확인하는 메서드, email이 '@example.com'으로 끝나는지 확인하여 조건문 실행
+#         email_id = email.removesuffix('@example.com') # 문자열에서 특정 접미사를 제거하는 메서드, email에서 '@example.com'을 제거하여 아이디를 반환
+#         return email_id # 함수의 반환값, email_id를 반환하여 함수 실행 결과로 사용할 수 있도록 함
+#     else:
+#         return None # email이 '@example.com'으로 끝나지 않는 경우, None을 반환하여 함수 실행 결과로 사용할 수 있도록 함
+    
+# user_id = get_id("user@example.com")
+# print(user_id) 
+
+# -------------------------------------------------------------------
