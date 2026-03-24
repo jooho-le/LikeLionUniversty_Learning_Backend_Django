@@ -18,3 +18,26 @@ while not register: # register가 False인 동안 반복하는 while 루프, 회
     else: # 사용자가 'y'나 'n'이 아닌 다른 입력을 한 경우, 올바른 입력을 요구하는 조건문
         print("올바른 입력이 아닙니다. 다시 입력해주세요.")
   
+users = [] # 사용자 정보를 저장하는 리스트, 회원가입이 완료된 사용자들의 정보를 저장하기 위해 빈 리스트로 초기화
+
+while True: # 무한 루프, 사용자 정보를 계속해서 입력받기 위해 사용
+    
+    user = {} # 사용자 정보를 저장하는 딕셔너리, 각 사용자의 정보를 키-값 쌍으로 저장하기 위해 빈 딕셔너리로 초기화
+    
+    username = input("ID: ") # 사용자로부터 ID를 입력받는 함수, 입력된 ID를 username 변수에 저장
+    while True:
+        password = input("Password: ") # 사용자로부터 비밀번호를 입력받는 함수, 입력된 비밀번호를 password 변수에 저장
+        password_confirm = input("Password 확인: ") # 사용자로부터 비밀번호 확인을 입력받는 함수, 입력된 비밀번호 확인을 password_confirm 변수에 저장
+        if password == password_confirm:
+            break
+        else:
+            print("비밀번호가 일치하지 않습니다. 다시 입력해주세요.")
+    name = input("Name: ") # 사용자로부터 이름을 입력받는 함수, 입력된 이름을 name 변수에 저장
+    while True:
+        birth_date = input("생년월일(6자리): ")
+        if len(birth_date) == 6 & birth_date.isdigit(): # 생년월일이 6자 이면서 숫자로만 
+            break
+        else:
+            print("생년월일 입력값이 올바르지 않습니다")
+    email = input("email: ")
+    
