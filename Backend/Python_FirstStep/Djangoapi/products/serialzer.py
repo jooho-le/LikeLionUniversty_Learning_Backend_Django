@@ -7,8 +7,8 @@ class ProductSerializer(serializers.ModelSerializer):
     
         model = Product
     
-        fields = { # initial 참고 
+        fields = [ # initial 참고 
             'id',
             'product_name',
             'price',
-        }
+        ]
