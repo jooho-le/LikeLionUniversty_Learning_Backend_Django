@@ -99,5 +99,3 @@ foreign_stud_1 = ForeignStudent('david', '국문학과', '미국')
 
 # 오버라이딩한거 출력 
 foreign_stud_1.study()
-
-
