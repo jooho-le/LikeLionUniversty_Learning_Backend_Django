@@ -12,5 +12,20 @@
 
 # -------------------------------------------------------------------
  
-with open('Backend/Python_FirstStep/FileIO&Exception/literaure/ex.txt', 'r', encoding='utf-8') as f: # with 구문을 사용하면 파일을 자동으로 닫아줌
-    print(f.read())
+# with open('Backend/Python_FirstStep/FileIO&Exception/literaure/ex.txt', 'r', encoding='utf-8') as f: # with 구문을 사용하면 파일을 자동으로 닫아줌
+#     print(f.read())
+    
+# -------------------------------------------------------------------
+
+# 파일 쓰기 
+
+# f = open('Backend/Python_FirstStep/FileIO&Exception/literaure/ex.txt', 'w', encoding='utf-8') # w: write, a: append
+# # w : 파일이 존재하지 않으면 새로 생성, 존재하면 기존 내용 삭제 후 새로 작성
+# # a : 파일이 존재하지 않으면 새로 생성, 존재하면 기존 내용 유지 후 새로 작성
+
+# f.write('새로운 글 작성')
+# f.close()
+
+f = open('Backend/Python_FirstStep/FileIO&Exception/literature/ex.txt', 'a', encoding='utf-8') # a: append
+f.write('\n새로운 글 추가')
+f.close()
