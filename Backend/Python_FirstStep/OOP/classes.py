@@ -44,7 +44,34 @@
 # student_1.study()
 
 
-## 인스턴스 값 변경 
+# ## 인스턴스 값 변경 
+
+# class Student:
+#     def __init__(self, name, major):
+#         self.name = name
+#         self.major = major
+#         self.is_graduated = False
+
+#     def study(self):
+#         print(f'{self.name} 학생은 공부 중입니다.')
+        
+#     ## 변경함수 
+#     def edit_major(self, new_major):
+#         self.major = new_major
+#         print(f'{student_1.major}로 전경 변경')
+
+# student_1 = Student('이주호', '기설')
+
+# ## 직접변경 - 바람직하지는 않음 
+# # student_1.major = '컴공'
+# # print(student_1.major)
+
+# student_1.edit_major('컴공')
+# print(student_1.major)
+
+# -------------------------------------------------------------------
+
+# 상속 (inheritance)
 
 class Student:
     def __init__(self, name, major):
@@ -54,17 +81,14 @@ class Student:
 
     def study(self):
         print(f'{self.name} 학생은 공부 중입니다.')
-        
-    ## 변경함수 
-    def edit_major(self, new_major):
-        self.major = new_major
-        print(f'{student_1.major}로 전경 변경')
 
-student_1 = Student('이주호', '기설')
+class ForeignStudent(Student): # ForeignStudent 클래스는 Student 클래스를 상속받음, ForeignStudent 클래스는 Student 클래스의 모든 속성과 메서드를 사용할 수 있음
+    def __init__(self, name, major, country): # ForeignStudent 클래스의 생성자 메서드, name과 major 매개변수는 부모 클래스인 Student의 생성자 메서드에서 처리되고, country 매개변수는 ForeignStudent 클래스에서 처리됨
+        super().__init__(name, major) # 부모 클래스인 Student의 생성자 메서드를 호출하여 name과 major 속성을 초기화함
+        self.country = country # self로 새롭게 할당 받을수 있게 
 
-## 직접변경 - 바람직하지는 않음 
-# student_1.major = '컴공'
-# print(student_1.major)
-
-student_1.edit_major('컴공')
-print(student_1.major)
+foreign_stud_1 = ForeignStudent('david', '국문학과', '미국')
+print(foreign_stud_1.name) # ForeignStudent 클래스는 Student 클래스를 상속받았기 때문에 name 속성에 접근할 수 있음, 'david'가 출력
+print(foreign_stud_1.major) # ForeignStudent 클래스는 Student 클래스를 상속받았기 때문에 major 속성에 접근할 수 있음, '국문학과'가 출력
+print(foreign_stud_1.is_graduated) # ForeignStudent 클래스는 Student 클래스를 상속받았기 때문에 is_graduated 속성에 접근할 수 있음, False가 출력
+print(foreign_stud_1.country) # ForeignStudent 클래스는 Student 클래스를 상속받았기 때문에 country 속성에 접근할 수 있음, '미국'이 출력
